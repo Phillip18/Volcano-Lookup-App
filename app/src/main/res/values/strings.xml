@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Volcanoes</string>
+    <string name="API_KEY"></string>
+    <string name="see_image">see image</string>
+    <string name="error">Description could not be downloaded due to some error with the internet.</string>
+    <string name="welcome">WELCOME TO VOLCANO APP</string>
+    <string name="description">The markers on the map show volcanoes.  \nClick on a marker to read
+    the description of a volcano and see its image.\n\n
+    All the data and images are taken from the website volcanodiscovery.com.</string>
+    <string name="loading">LOADING...</string>
+    <string name="channel_name">Volcanoes</string>
+    <string name="location_technical_error">Location couldn\'t be obtained for an unknown reason.</string>
+    <string name="permission_denied">Your location couldn\'t be obtained due to lack of permission for location services.</string>
+    <string name="location_is_off">You location conldn\'t be obtained, because Location is turned off in settings.</string>
+</resources>

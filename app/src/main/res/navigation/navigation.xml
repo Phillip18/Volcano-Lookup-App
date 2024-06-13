@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/motion">
+
+    <fragment
+        android:id="@+id/motion"
+        android:name="com.example.volcanoes.MotionFragment"
+        android:label="WELLCOME">
+        <action
+            android:id="@+id/action_motion_to_map"
+            app:destination="@id/map" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.example.volcanoes.MapFragment"
+        android:label="Map">
+        <action
+            android:id="@+id/action_map_to_details"
+            app:destination="@id/details"
+            app:popUpTo="@id/map" />
+        <action
+            android:id="@+id/action_map_to_list"
+            app:destination="@id/list" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/details"
+        android:name="com.example.volcanoes.DetailsFragment"
+        android:label="Details" >
+        <action
+            android:id="@+id/action_details_to_photo"
+            app:destination="@id/photo" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/list"
+        android:name="com.example.volcanoes.ListFragment">
+        <action
+            android:id="@+id/action_list_to_details"
+            app:destination="@id/details" />
+        <action
+            android:id="@+id/action_list_to_map"
+            app:destination="@id/map" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/photo"
+        android:name="com.example.volcanoes.PhotoFragment"/>
+
+</navigation>
